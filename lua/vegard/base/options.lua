@@ -22,6 +22,7 @@ local options = {
   wrap = false,
   scrolloff = 8,
   sidescrolloff = 8,
+  termguicolors = true,
   -- tabs
   showtabline = 2,
   -- configuring tabs
