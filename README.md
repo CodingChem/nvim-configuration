@@ -17,6 +17,7 @@ Catpuccin Mocha
 - bbye
 - nvimtree
 - gitsigns
+- treesitter
 
 ## Options
 
