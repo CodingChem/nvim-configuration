@@ -45,6 +45,10 @@ return packer.startup(function(use)
   use "nvim-lua/plenary.nvim"
   use { "catppuccin/nvim", as = "catppuccin" } 
   use "akinsho/toggleterm.nvim"
+  use "kyazdani42/nvim-web-devicons"
+  use "akinsho/bufferline.nvim"
+  use "moll/vim-bbye"
+  use "kyazdani42/nvim-tree.lua"
 
   if PACKER_BOOTSTRAP then
     require("packer").sync()

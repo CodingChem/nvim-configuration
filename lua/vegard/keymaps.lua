@@ -33,8 +33,8 @@ keymap("n", "<A-k>", ":resize +2<CR>",opts)
 ---- New windows
 keymap("n", "<leader>h", ":vertical split<CR>", opts)
 keymap("n", "<leader>v", ":split<CR>", opts)
--- open lex
-keymap("n", "<leader>e", ":Lex 30<CR>",opts)
+-- Open NvimTree
+keymap("n", "<leader>e", ":NvimTreeToggle<cr>", opts)
 -- Buffers:
 ---- navigation
 keymap("n", "<S-l>", ":bnext<CR>", opts)
