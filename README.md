@@ -18,6 +18,8 @@ Catpuccin Mocha
 - nvimtree
 - gitsigns
 - treesitter
+- cmp
+- lsp
 
 ## Options
 
