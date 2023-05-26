@@ -44,7 +44,7 @@ return packer.startup(function(use)
   use "nvim-lua/popup.nvim"
   use "nvim-lua/plenary.nvim"
   use { "catppuccin/nvim", as = "catppuccin" } 
-
+  use "akinsho/toggleterm.nvim"
 
   if PACKER_BOOTSTRAP then
     require("packer").sync()
