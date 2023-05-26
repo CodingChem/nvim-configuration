@@ -10,7 +10,11 @@ local keymap = vim.api.nvim_set_keymap
 keymap("", "<Space>", "<Nop>", opts)
 vim.g.mapleader = " "
 vim.g.maplocalleader = " "
-
+---- Menus
+-- Open NvimTree
+keymap("n", "<leader>e", ":NvimTreeToggle<cr>", opts)
+-- open lazygit:
+keymap("n", "<leader>g", ":lua _LAZYGIT_TOGGLE()<CR>", opts)
 -- Window Controlls:
 ---- Switching
 ------ left
@@ -33,8 +37,6 @@ keymap("n", "<A-k>", ":resize +2<CR>",opts)
 ---- New windows
 keymap("n", "<leader>h", ":vertical split<CR>", opts)
 keymap("n", "<leader>v", ":split<CR>", opts)
--- Open NvimTree
-keymap("n", "<leader>e", ":NvimTreeToggle<cr>", opts)
 -- Buffers:
 ---- navigation
 keymap("n", "<S-l>", ":bnext<CR>", opts)
