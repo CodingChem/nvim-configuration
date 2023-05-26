@@ -19,7 +19,7 @@ Catpuccin Mocha
 - gitsigns
 - treesitter
 - cmp
-- lsp
+- mason
 
 ## Options
 
