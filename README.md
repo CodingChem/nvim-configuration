@@ -13,6 +13,9 @@ Catpuccin Mocha
 - popop
 - plenary
 - toggleterm
+- bufferline
+- bbye
+- nvimtree
 
 ## Options
 
