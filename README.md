@@ -16,6 +16,7 @@ Catpuccin Mocha
 - bufferline
 - bbye
 - nvimtree
+- gitsigns
 
 ## Options
 
