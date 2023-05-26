@@ -31,8 +31,8 @@ keymap("n", "<A-j>", ":resize -2<CR>",opts)
 ------ up
 keymap("n", "<A-k>", ":resize +2<CR>",opts)
 ---- New windows
-keymap("n", "<leader>v", ":vertical split<CR>", opts)
-keymap("n", "<leader>h", ":split<CR>", opts)
+keymap("n", "<leader>h", ":vertical split<CR>", opts)
+keymap("n", "<leader>v", ":split<CR>", opts)
 -- open lex
 keymap("n", "<leader>e", ":Lex 30<CR>",opts)
 -- Buffers:
