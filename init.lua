@@ -3,12 +3,9 @@
 
 -- Shared extensions
 ------- options:
-require "vegard.base.options"
-require "vegard.base.keymaps"
-require "vegard.base.plugins"
-require "vegard.base.theme"
 if vim.g.vscode then
-    -- VSCode extension
+  -- VSCode extension
 else
-    -- ordinary Neovim
+  -- ordinary Neovim
+  require "vegard"
 end
