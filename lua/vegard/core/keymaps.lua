@@ -53,9 +53,9 @@ if not ok then
 end
 
 wk.register({
-  q = {"<cmd>q<cr>", "Exit"},
+  q = {"<cmd>q<cr>", "Quit"},
   w = {"<cmd>w<cr>", "Write"},
-  e = {":NvimTreeToggle<cr>", "Explorer"}
+  e = {":NvimTreeToggle<cr>", "Explorer"},
   t = {
     name = "Tabs",
     n = {"<cmd>tabnew<cr>", "New Tab"},
@@ -90,7 +90,3 @@ wk.register({
     q = {":Bdelete!<cr>", "Close Buffer"}
   }
 }, {prefix = "<leader>" })
-
-
--- Open NvimTree
-keymap("n", "<leader>e", ":NvimTreeToggle<cr>", opts)
