@@ -11,10 +11,6 @@ keymap("", "<Space>", "<Nop>", opts)
 vim.g.mapleader = " "
 vim.g.maplocalleader = " "
 ---- Menus
--- Open NvimTree
-keymap("n", "<leader>e", ":NvimTreeToggle<cr>", opts)
--- open lazygit:
-keymap("n", "<leader>g", ":lua _LAZYGIT_TOGGLE()<CR>", opts)
 -- Window Controlls:
 ---- Switching
 ------ left
@@ -51,3 +47,12 @@ keymap("v", "J", ":m '>+1<CR>gv=gv", opts)
 -- Better page movement
 keymap("v", "<C-d>", "<C-d>zz>", opts)
 keymap("v", "<C-u>", "<C-u>zz>", opts)
+
+--============================================
+-----------------Plugins----------------------
+--============================================
+
+-- Open NvimTree
+keymap("n", "<leader>e", ":NvimTreeToggle<cr>", opts)
+-- open lazygit:
+keymap("n", "<leader>g", ":lua _LAZYGIT_TOGGLE()<CR>", opts)

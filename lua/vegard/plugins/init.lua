@@ -1,6 +1,6 @@
 require("vegard.plugins.packer")
 require("vegard.plugins.nvim-tree")
-require("vegard.plugins.bufferline")
+--require("vegard.plugins.bufferline")
 require("vegard.plugins.cmp")
 require("vegard.plugins.gitsigns")
 require("vegard.plugins.theme")

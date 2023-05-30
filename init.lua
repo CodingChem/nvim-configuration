@@ -7,5 +7,5 @@ if vim.g.vscode then
   -- VSCode extension
 else
   -- ordinary Neovim
-  require "vegard"
+  require("vegard")
 end
