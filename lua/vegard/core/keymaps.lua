@@ -76,6 +76,17 @@ wk.register({
     l = {":Gitsigns preview_hunk<cr>", "Preview"},
     a = {":Gitsigns stage_hunk<cr>", "Stage Hunk"},
     A = {":Gitsigns stage_buffer<cr>", "Stage Buffer"}
+  },
+  b = {
+    name = "Buffers",
+    s = {":BufferLinePick<cr>", "Select Buffer"},
+    n = {
+      name = "New Buffer",
+      h = {":vnew<cr>", "Place left"},
+      v = {":new<cr>", "Place Below"},
+      n = {":enew<cr>", "In buffer"}
+    },
+    q = {":Bdelete!<cr>", "Close Buffer"}
   }
 }, {prefix = "<leader>" })
 
