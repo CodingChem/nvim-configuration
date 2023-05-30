@@ -80,4 +80,15 @@ local function on_attach(bufnr)
 
 end
 
-nvim_tree.setup({ on_attach = on_attach })
+nvim_tree.setup({ 
+  on_attach = on_attach,
+  actions = {
+    open_file = {
+      window_picker = {
+        enable = false,
+      },
+    },
+  }
+})
+
+

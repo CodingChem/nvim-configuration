@@ -19,7 +19,7 @@ end
 vim.cmd [[
   augroup packer_user_config
     autocmd!
-    autocmd BufWritePost plugins.lua source <afile> | PackerSync
+    autocmd BufWritePost packer.lua source <afile> | PackerSync
   augroup end
 ]]
 
@@ -41,15 +41,21 @@ packer.init {
 -- Packer packages
 return packer.startup(function(use)
   use "wbthomason/packer.nvim"
+  -- base files
   use "nvim-lua/popup.nvim"
   use "nvim-lua/plenary.nvim"
+  -- Theme
   use { "catppuccin/nvim", as = "catppuccin" } 
+  -- Toggleterm
   use "akinsho/toggleterm.nvim"
+  -- Nvim tree
   use "kyazdani42/nvim-web-devicons"
-  use "akinsho/bufferline.nvim"
-  use "moll/vim-bbye"
   use "kyazdani42/nvim-tree.lua"
+  -- Exit buffer safely
+  use "moll/vim-bbye"
+  -- Git integration
   use "lewis6991/gitsigns.nvim"
+  -- better highlighting
   use {
     "nvim-treesitter/nvim-treesitter",
     run = ":TSUpdate",
@@ -67,11 +73,19 @@ return packer.startup(function(use)
   use "L3MON4D3/LuaSnip" --snippet engine
   use "rafamadriz/friendly-snippets" -- a bunch of snippets to use
 
+  -- LSP Configurations
   use { "neovim/nvim-lspconfig"} -- enable LSP
   use { "williamboman/mason.nvim"} -- simple to use language server installer
   use { "williamboman/mason-lspconfig.nvim"}
   use { "jose-elias-alvarez/null-ls.nvim"} -- for formatters and linters
   use { "RRethy/vim-illuminate"}
+  -- documenting keybinds
+  use { "folke/which-key.nvim"}
+  -- Lualine
+  use {
+    'nvim-lualine/lualine.nvim',
+    requires = { 'nvim-tree/nvim-web-devicons', opt = true }
+  }
 
   if PACKER_BOOTSTRAP then
     require("packer").sync()

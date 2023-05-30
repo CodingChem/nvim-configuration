@@ -23,9 +23,9 @@ local options = {
   scrolloff = 8,
   sidescrolloff = 8,
   termguicolors = true,
-  -- tabs
+  -- show tabline
   showtabline = 2,
-  -- configuring tabs
+  -- Configure tabs
   expandtab = true,
   shiftwidth = 2,
   tabstop = 2,
