@@ -91,10 +91,5 @@ wk.register({
 }, {prefix = "<leader>" })
 
 
----- New windows
-keymap("n", "<leader>sh", ":vertical split<CR>", opts)
-keymap("n", "<leader>sv", ":split<CR>", opts)
 -- Open NvimTree
 keymap("n", "<leader>e", ":NvimTreeToggle<cr>", opts)
--- open lazygit:
-keymap("n", "<leader>g", ":lua _LAZYGIT_TOGGLE()<CR>", opts)
