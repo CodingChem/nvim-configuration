@@ -55,6 +55,7 @@ end
 wk.register({
   q = {"<cmd>q<cr>", "Exit"},
   w = {"<cmd>w<cr>", "Write"},
+  e = {":NvimTreeToggle<cr>", "Explorer"}
   t = {
     name = "Tabs",
     n = {"<cmd>tabnew<cr>", "New Tab"},
