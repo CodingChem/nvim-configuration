@@ -94,5 +94,8 @@ wk.register({
     f = {":Telescope find_files<cr>", "Find Files"},
     l = {":Telescope live_grep<cr>", "Live Grep"},
     g = {":Telescope git_files<cr>", "Search Git"}
+  },
+  h = {
+    name = "Harpoon" -- Todo implement harpoon https://github.com/ThePrimeagen/harpoon
   }
 }, {prefix = "<leader>" })
