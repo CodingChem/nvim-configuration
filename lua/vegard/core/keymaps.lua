@@ -88,5 +88,11 @@ wk.register({
       n = {":enew<cr>", "In buffer"}
     },
     q = {":Bdelete!<cr>", "Close Buffer"}
+  },
+  f = {
+    name = "Find",
+    f = {":Telescope find_files<cr>", "Find Files"},
+    l = {":Telescope live_grep<cr>", "Live Grep"},
+    g = {":Telescope git_files<cr>", "Search Git"}
   }
 }, {prefix = "<leader>" })

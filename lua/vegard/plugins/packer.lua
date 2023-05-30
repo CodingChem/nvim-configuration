@@ -87,6 +87,8 @@ return packer.startup(function(use)
     requires = { 'nvim-tree/nvim-web-devicons', opt = true }
   }
   use {'akinsho/bufferline.nvim', tag = "*", requires = 'nvim-tree/nvim-web-devicons'}
+  -- Telescope
+  use {'nvim-telescope/telescope.nvim'}
 
   if PACKER_BOOTSTRAP then
     require("packer").sync()
