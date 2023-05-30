@@ -8,7 +8,6 @@ local keymap = vim.api.nvim_set_keymap
 keymap("", "<Space>", "<Nop>", opts)
 vim.g.mapleader = " "
 vim.g.maplocalleader = " "
----- Menus
 -- Window Controlls:
 ---- Switching
 ------ left
@@ -28,9 +27,6 @@ keymap("n", "<A-l>", ":vertical resize -2<CR>",opts)
 keymap("n", "<A-j>", ":resize -2<CR>",opts)
 ------ up
 keymap("n", "<A-k>", ":resize +2<CR>",opts)
----- New windows
-keymap("n", "<leader>h", ":vertical split<CR>", opts)
-keymap("n", "<leader>v", ":split<CR>", opts)
 -- Buffers:
 ---- navigation
 keymap("n", "<S-l>", ":bnext<CR>", opts)
