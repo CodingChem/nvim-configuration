@@ -91,6 +91,8 @@ return packer.startup(function(use)
   use {'nvim-telescope/telescope.nvim'}
   -- Harpoon
   use {'ThePrimeagen/harpoon'}
+  -- Tmux navigation
+  use { "alexghergh/nvim-tmux-navigation" }
 
   if PACKER_BOOTSTRAP then
     require("packer").sync()
